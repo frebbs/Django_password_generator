@@ -6,35 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <body>
+<div class="container text-center">
+    <h1>Password Generator</h1>
 
-<h1>Password Generator</h1>
-
-<form action="{% url 'password' %}">
-    <select name="length">
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15" selected="selected">15</option>
-        <option value="16">16</option>
-    </select>
-<br>
-    <input type="checkbox" name="uppercase">Uppercase
-<br>
-    <input type="checkbox" name="numbers">Numbers
-<br>
-    <input type="checkbox" name="special">Special Characters
-<br>
-    <input type="submit" value="Generate Password">
-</form>
+    <form action="{% url 'password' %}">
+        <select name="length">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15" selected="selected">15</option>
+            <option value="16">16</option>
+        </select> Length
+    <br>
+        <input type="checkbox" name="uppercase"> Uppercase
+    <br>
+        <input type="checkbox" name="numbers"> Numbers
+    <br>
+        <input type="checkbox" name="special"> Special Characters
+    <br>
+        <input type="submit" value="Generate Password" class="btn btn-primary">
+    </form>
+        <br><br>
     
+    <a href="{% url 'about' %}" class="btn btn-info">Who wrote this</a>
+</div>
 
-<a href="{% url 'about' %}">Who wrote this</a>
 </body>
 </html>

@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About this APP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Random Password Generator</h1>
-    <p>This was created by Aaron Diable while learning to code with Django and Python</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus minus deserunt nam consequatur, fugiat quibusdam inventore enim debitis vitae ad odio.</p>
+    <div class="container text-center">
+        <h1>Random Password Generator</h1>
+        <p>This was created by Aaron Diable while learning to code with Django and Python</p>
+        <a href="{% url 'home' %}" class="btn btn-success">Back to Generator</a>
+    </div>
+
 </body>
 </html>
